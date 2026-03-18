@@ -8,23 +8,15 @@ package com.mycompany.maratona.java;
  *
  * @author carlos
  */
-public class Aula02TiposPrimitivos {
+public class Aula03TiposPrimitivosExercicio {
     public static void main(String[] args) {
-        // int, double, float, byte, short, long, boolean
-        int idade = 10; 
-        long numGrande = (long) 155.23;
-        double salDouble = 2800.80;
-        float salFloat = (float) 2500.8D;
-        byte idadeByte = 127;
-        short idadeShort = 32000;
-        boolean verdadeiro = true;
-        boolean falso = false;
-        char caractere = '\u0041';
+        String nome = "Kirito";
+        String endereco = "AV Joao das galileias";
+        double salario = 5431.12;
+        String dataRecebimentoSalario = "28/12/2821";
+        String relatorio = "Eu "+nome+" morando no endereço "+endereco+" confirmo que recebi o salário de "+salario+", na data "+dataRecebimentoSalario;
         
-        System.out.println("a idade é "+idade+" anos");
-        System.out.println(falso);
-        System.out.println("char "+caractere);
-        System.out.println(numGrande);
+        System.out.println(relatorio);
         
     }
 }
