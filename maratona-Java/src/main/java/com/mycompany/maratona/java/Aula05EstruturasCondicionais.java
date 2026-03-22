@@ -10,20 +10,13 @@ package com.mycompany.maratona.java;
  */
 public class Aula05EstruturasCondicionais {
     public static void main(String[] args) {
-        int idade = 45;
+        double salario = 3000;
+        String msmDoar = "Eu vou doar 500 pro DevDojo";
+        String msmNaoDoar = "Ainda Não tenho condições, mas vou ter!";
+        String resultado = salario > 5000 ? msmDoar : msmNaoDoar;
         
-        if(idade < 15){
-            System.out.println("Categoria Infantil");
-        } else if(idade >=15 && idade < 18){
-            System.out.println("Categoria Juvenil");
-        } else if(idade >18){
-            System.out.println("Categoria Adulto");
-        } else  {
-            System.out.println("erro");
-        }
-        
-        
-        System.out.println("Fora do if");
+        System.out.println(resultado);
+    
         
     }
 }
