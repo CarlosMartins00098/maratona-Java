@@ -10,12 +10,18 @@ package com.mycompany.maratona.java;
  */
 public class Aula05EstruturasCondicionais {
     public static void main(String[] args) {
-        double salario = 3000;
-        String msmDoar = "Eu vou doar 500 pro DevDojo";
-        String msmNaoDoar = "Ainda Não tenho condições, mas vou ter!";
-        String resultado = salario > 5000 ? msmDoar : msmNaoDoar;
+        double salario = 70000;
+        double taxa;
         
-        System.out.println(resultado);
+        if (salario < 34713) {
+            taxa = salario * 0.0970; 
+        } else if (salario >= 34713 && salario <= 68508){
+            taxa = salario * 0.3735;
+        } else {
+            taxa = salario * 0.4950;
+        }
+        
+        System.out.println("o salário é "+salario+": e a taxa è "+taxa);
     
         
     }
