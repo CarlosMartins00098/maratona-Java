@@ -8,8 +8,9 @@ package com.mycompany.maratona.java.introducao.javacore.Aintroducaoclasses.domin
  *
  * @author carlos
  */
-public class Estudante {
-    public String nome = "Zoro";
+public class Professor {
+    public String nome;
     public int idade;
     public char sexo;
+    
 }
