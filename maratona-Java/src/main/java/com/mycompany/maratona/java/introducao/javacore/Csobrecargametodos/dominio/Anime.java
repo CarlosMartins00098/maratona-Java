@@ -1,13 +1,70 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.maratona.java.introducao.javacore.Csobrecargametodos.dominio;
 
-/**
- *
- * @author carlos
- */
 public class Anime {
+    private String nome;
+    private String tipo;
+    private int episodios;
+    private String genero;
+
+   
+    
+    public void init(String nome, String tipo, int episodios){
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+                
+    }
+    
+    // sobrecarga de metodos 
+    // o metodo abaixo está sobrecarregado
+    public void init(String nome, String tipo, int episodios, String genero){
+        init(nome, tipo, episodios);
+        /*
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+        */
+        this.genero = genero;
+                
+    }
+    
+    public void imprime(){
+        System.out.println(this.tipo);
+        System.out.println(this.episodios);
+        System.out.println(this.nome);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getEpisodios() {
+        return episodios;
+    }
+
+    public void setEpisodios(int episodios) {
+        this.episodios = episodios;
+    }
+    
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+    
     
 }
