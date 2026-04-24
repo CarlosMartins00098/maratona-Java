@@ -1,4 +1,4 @@
-package com.mycompany.maratona.java.introducao.javacore.Csobrecargametodos.dominio;
+package com.mycompany.maratona.java.introducao.javacore.Dconstrutores.dominio;
 
 public class Anime {
     private String nome;
@@ -6,30 +6,19 @@ public class Anime {
     private int episodios;
     private String genero;
 
-    // criar um construtor dentro da classe, caso você não crie o java vai criar na hora de compilar
+    // criar um construtor dentro da classe, ele executa primeiro 
+    public Anime(String nome, String tipo, int episodios, String genero){
+        this.nome = nome;
+        this.tipo = tipo;
+        this.episodios = episodios;
+        this.genero = genero;
+    }
+    
+    // sobrecarga de contrutores
     public Anime(){
         
     }
     
-    public void init(String nome, String tipo, int episodios){
-        this.nome = nome;
-        this.tipo = tipo;
-        this.episodios = episodios;
-                
-    }
-    
-    // sobrecarga de metodos 
-    // o metodo abaixo está sobrecarregado
-    public void init(String nome, String tipo, int episodios, String genero){
-        init(nome, tipo, episodios);
-        /*
-        this.nome = nome;
-        this.tipo = tipo;
-        this.episodios = episodios;
-        */
-        this.genero = genero;
-                
-    }
     
     public void imprime(){
         System.out.println(this.tipo);
