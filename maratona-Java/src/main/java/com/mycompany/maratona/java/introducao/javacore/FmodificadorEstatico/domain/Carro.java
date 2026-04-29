@@ -3,7 +3,7 @@ package com.mycompany.maratona.java.introducao.javacore.FmodificadorEstatico.dom
 public class Carro {
     private String nome;
     private double velocidadeMaxima;
-    public static double velocidadeLimite = 250;
+    private static double velocidadeLimite = 250;
 
     public Carro(String nome, double velocidadeMaxima) {
         this.nome = nome;
@@ -15,9 +15,18 @@ public class Carro {
         System.out.println("------------");
         System.out.println("Nome "+ this.nome);
         System.out.println("velocidade Máxima "+ this.velocidadeMaxima);
-        System.out.println("velocidade Limite "+ Carro.velocidadeLimite);
+        System.out.println("velocidade Limite "+ this.velocidadeLimite);
     }
 
+    public static void setVelocidadeLimite(double velocidadeLimite){
+        // this.velocidadeLimite não pode ser usado por que não tem garantia que ele exita na instancia diferente do objeto que tem a garantia de que ele vai existir
+        Carro.velocidadeLimite = velocidadeLimite;
+    }
+    
+    public static double getVelocidadeLimite(){
+        return Carro.velocidadeLimite;
+    }
+    
     public String getNome() {
         return nome;
     }

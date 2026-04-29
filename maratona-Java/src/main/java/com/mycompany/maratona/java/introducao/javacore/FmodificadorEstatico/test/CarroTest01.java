@@ -7,7 +7,7 @@ public class CarroTest01 {
         Carro c1 = new Carro("BMW",280);
         Carro c2 = new Carro("Mercedes", 275);
         Carro c3 = new Carro("Audi",290);
-        Carro.velocidadeLimite = 160; // o metodo static afeta todos os objetos de forma iqual
+        Carro.setVelocidadeLimite(160); // o metodo static afeta todos os objetos de forma iqual
         c1.imprime();
         c2.imprime();
         c3.imprime();
