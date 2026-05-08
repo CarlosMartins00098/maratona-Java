@@ -1,4 +1,4 @@
-package com.mycompany.maratona.java.introducao.javacore.introducaoclasses.text;
+package com.mycompany.maratona.java.introducaoclasses.text;
 
 import com.mycompany.maratona.java.introducao.javacore.Aintroducaoclasses.dominio.Carro;
 

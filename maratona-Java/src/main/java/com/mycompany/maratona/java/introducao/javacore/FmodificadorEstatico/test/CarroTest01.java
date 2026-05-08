@@ -1,6 +1,6 @@
 package com.mycompany.maratona.java.introducao.javacore.FmodificadorEstatico.test;
 
-import com.mycompany.maratona.java.introducao.javacore.FmodificadorEstatico.domain.Carro;
+import com.mycompany.maratona.java.introducao.javacore.FmodificadorEstatico.dominio.Carro;
 
 public class CarroTest01 {
     public static void main(String[] args) {

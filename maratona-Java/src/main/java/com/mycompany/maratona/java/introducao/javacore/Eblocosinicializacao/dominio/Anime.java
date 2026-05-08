@@ -1,4 +1,4 @@
-package com.mycompany.maratona.java.introducao.javacore.Eblocosinicializacao.domain;
+package com.mycompany.maratona.java.introducao.javacore.Eblocosinicializacao.dominio;
 
 public class Anime {
     private String nome;
